@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div><strong>macacos</strong></div>
+    <div>cavalos</div>
+    <script>
+        var corpo = document.body //PEGOU O ELEMENTO BODY DENTRO DO DOCUMENT
+        var t1 = window.document.getElementsByTagName('div')[0] // PEGOU O ELEMENTO DIV DE NUMERO 0 DENTRO DO DOCUMENT
+        var t2 = window.document.getElementsByTagName('div')[1] // PEGOU O ELEMENTO DIV DE NUMERO 1 DENTRO DO DOCUMENT
+        window.document.write(t1.innerText) //ESCREVEU A DIV
+        window.document.write(t1.innerHTML) //ESCREVEU A DIV MANTENTO OS PADRÕES COMO O STRONG(BOLD)
+        t2.style.color = "darkred" //MUDOU A COR DO TEXTO
+        corpo.style.background = 'crimson' //MUDOU A COR DO FUNDO
+    </script>
+</body>
+</html>
