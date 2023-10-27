@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .area{
+            width: 200px;
+            height: 150px;
+            background-color: coral;
+            font: lighter 30px Arial;
+            color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="area">Interaja...</div>
+
+    <script>
+        const a = document.querySelector(".area")
+        a.addEventListener('mouseenter', entrou)
+        function entrou(){
+            a.innerHTML = "entrou"
+            a.style.height = "200px"
+        }
+        a.addEventListener('mouseout', saiu)
+        function saiu(){
+            a.innerHTML = "Interaja..."
+            a.style.height = ""
+        }
+
+    </script>
+</body>
+</html>
